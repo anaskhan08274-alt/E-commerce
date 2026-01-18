@@ -32,6 +32,7 @@ export default function App() {
         <BrowserRouter>
        <Suspense fallback={<p> loading...</p>}>
           <Routes>
+            <Route path="/" element={<><Navbar /><FetchedAsync /></>} />
             <Route path="/Product" element={<><Navbar /><FetchedAsync /></>} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/BuyNow" element={<><BuyNow /></>} /> 
